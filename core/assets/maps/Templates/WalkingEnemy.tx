@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../Tilesets/Objects.tsx"/>
+ <object name="enemy" type="WalkingEnemyObject" gid="27" width="32" height="32">
+  <properties>
+   <property name="can_feel_floor" type="bool" value="true"/>
+   <property name="walk_speed" type="float" value="0.5"/>
+  </properties>
+ </object>
+</template>

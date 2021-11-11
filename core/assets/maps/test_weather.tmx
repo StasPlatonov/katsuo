@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="100" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="164">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/Objects.tsx"/>
+ <tileset firstgid="1097" source="Tilesets/ForestBG.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1100" x="0" y="960" width="1280" height="736">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1103" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="100" height="30">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHtmEkKgDAQBAf//z6X32iuIgijDUWoQG6m6amKB61ySUACEpCABCQgAQlIYF4C21JF3vOSf55suKAucrcUM/LM5G76SBFg5ZLvILlbyiJ5ZnI3faQIsHLJd5DcLWWRPDO5mz5SBFi55DtI7paySJ6Z3E0fKQKs3BX8/+oAd0tZ1EeKbC9XHz1uqVP6SJHt5eqjxy11Sh8psr1cffS4pU7pI0W2l0v+BiZ369F+PzXejz/2fuXc9+D5db9PMNcTJ1LwZ2Y=
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" template="Templates/StartPoint.tx" x="98.6667" y="905.333"/>
+  <object id="163" template="Templates/EOLFlag.tx" x="1199.34" y="928"/>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" visible="0" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics" visible="0"/>
+</map>

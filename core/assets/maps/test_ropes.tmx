@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="100" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="162">
+ <tileset firstgid="1" source="Tilesets/Objects.tsx"/>
+ <tileset firstgid="73" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1097" source="Tilesets/ForestBG.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1100" x="0" y="960" width="1280" height="736">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1103" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="100" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="100" height="30">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHtmAEOwiAMRUm8h9P7X9I12kAawhispa6fhExgpb/vjxlNCQ0EQAAEQAAEQAAEQAAE7kvg9UjJc78v+Xpl5IXX5lmbFjPPNXvW5t2P937OZJ/VDD9mCV4bDz+u5dnarecsRfejh1GL8cxamZv3ie4Hc/ByhR9enPjqgB/Zj+33OzHPZEZWnKzyyBpXjqlmfnev1FHLHdWPGgsPc/BjzAXidsSOz2B5rWUr14/2rMX/+5xGzT3+9HDT0NaTd+U9K2suzwJ9lm2lNqnFany2Zrr/bMxoLVZ5RvVpxLVqbq1paJF7rs4v9ViMPdfsWZuWN1Qzv8dHclA895H4VkxUP1pMLNb4eZDf6fDDgn5fDvq/hnq05rXmqH4892dQszPX0Wu08/EB4y0XhQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" name="start" type="SpawnPointObject" x="66.6667" y="781.333">
+   <point/>
+  </object>
+  <object id="148" name="chain_01" type="RopeObject" x="182.667" y="607" width="16" height="16">
+   <properties>
+    <property name="anchors_indices" value="0"/>
+    <property name="damping" type="float" value="0.1"/>
+    <property name="physics" value="chain_phys_01"/>
+    <property name="sprite" value="greentexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+  </object>
+  <object id="152" type="RopeObject" x="319.667" y="483">
+   <properties>
+    <property name="sprite" value="greentexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="0,0 0,54.1905 -4,108.381 0,162.571 6.66667,220.762 0,270.952 -8,325.143 0,379.333"/>
+  </object>
+  <object id="153" type="RopeObject" x="431.333" y="956.667">
+   <properties>
+    <property name="anchors_indices" value="0,5"/>
+    <property name="sprite" value="play_up"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="-10,-121 67,-104 157,-95 243,-97 339,-108 421,-125"/>
+  </object>
+  <object id="154" type="RopeObject" x="510.667" y="452">
+   <properties>
+    <property name="sprite" value="greentexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="0,0 -3.33333,59.3333 -0.333333,122 -2.33333,191 -3.66667,243 -3.66667,306"/>
+  </object>
+  <object id="155" type="RopeObject" x="638.667" y="454.667">
+   <properties>
+    <property name="sprite" value="greentexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="0,0 0,49.1429 -2.33333,99.2857 0,147.429 1,197.571 0,245.714 2,292.857 0,344"/>
+  </object>
+  <object id="156" type="RopeObject" x="766.667" y="420">
+   <properties>
+    <property name="sprite" value="greentexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="0,0 0,40 0,80 0,120 0,160 0,200 0,240 0,280"/>
+  </object>
+  <object id="157" type="RopeObject" x="824" y="434">
+   <properties>
+    <property name="anchors_indices" value="0,5"/>
+    <property name="sprite" value="play_up"/>
+    <property name="thickness" type="float" value="18"/>
+   </properties>
+   <polyline points="-10,-121 67,-104 157,-95 243,-97 339,-108 421,-125"/>
+  </object>
+  <object id="158" type="RopeObject" x="68.3636" y="1021.45">
+   <properties>
+    <property name="anchors_indices" value="0,3"/>
+    <property name="sprite" value="play_up"/>
+    <property name="thickness" type="float" value="20"/>
+   </properties>
+   <polyline points="-10,-121 90,-134.667 149.667,-153.667 205.667,-202.333"/>
+  </object>
+  <object id="159" type="RopeObject" x="92" y="442">
+   <properties>
+    <property name="anchors_indices" value="1,4"/>
+    <property name="sprite" value="redtexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="-10,-121 67,-104 157,-95 243,-97 339,-108 421,-125"/>
+  </object>
+  <object id="160" type="RopeObject" x="808" y="870">
+   <properties>
+    <property name="anchors_indices" value="0,5"/>
+    <property name="sprite" value="play_up"/>
+    <property name="thickness" type="float" value="20"/>
+   </properties>
+   <polyline points="22,-187.667 73.6667,-129.333 155.667,-91 244.333,-75.6667 339,-70.6667 413,-82.3333"/>
+  </object>
+  <object id="161" type="RopeObject" x="842.667" y="424">
+   <properties>
+    <property name="anchors_indices" value="0,7"/>
+    <property name="sprite" value="greentexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="0,0 46.6667,39.8096 94.6667,67.619 154.667,87.429 221.333,101.904 281.333,112.381 336,114.857 390.667,102.667"/>
+  </object>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="100" height="30" visible="0" opacity="0.5">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" visible="0" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics">
+  <object id="149" name="chain_phys_01" x="190.667" y="616">
+   <properties>
+    <property name="type" value="chain"/>
+   </properties>
+   <polyline points="0,0 0,40 0,80 0,120 0,160 0,200"/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="40" height="1000" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="286">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/ForestBG.tsx"/>
+ <tileset firstgid="1032" source="Tilesets/Objects.tsx"/>
+ <objectgroup id="1" name="background">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1028" x="0" y="31996" width="1280" height="31772">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1031" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="40" height="1000">
+  <data encoding="base64" compression="zlib">
+   eAHt0IEAAAAAw6D5U1/hAIVQYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAgW9gcR4AAQ==
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="40" height="1000">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" template="Templates/StartPoint.tx" x="96.6667" y="31950.3"/>
+  <object id="152" template="Templates/EOLFlag.tx" gid="1080" x="1207.53" y="896.969"/>
+  <object id="196" name="path_ver" type="PathObject" x="340.849" y="-406.136">
+   <polyline points="219.257,32366.2 219.372,856.219"/>
+  </object>
+  <object id="199" name="platform" type="MovingPlatformObject" gid="1038" x="298.076" y="31967.3" width="524.515" height="14">
+   <properties>
+    <property name="interactive" type="bool" value="true"/>
+    <property name="move_sound" value="elevator"/>
+    <property name="path" value="path_ver"/>
+    <property name="path_loop" value="count"/>
+    <property name="path_loop_count" type="int" value="1"/>
+    <property name="path_move" value="one_way"/>
+    <property name="path_speed" type="float" value="1"/>
+    <property name="stop_sound" value="elevator_stop"/>
+   </properties>
+  </object>
+  <object id="200" template="Templates/ButtonSmall.tx" x="256.303" y="31967.7">
+   <properties>
+    <property name="act_on_deactivation" type="bool" value="false"/>
+    <property name="action_delay" type="float" value="5"/>
+    <property name="action_timeout" type="float" value="10"/>
+    <property name="actor" value="platform"/>
+   </properties>
+  </object>
+  <object id="205" template="Templates/CoinItem.tx" x="926.667" y="31098.7"/>
+  <object id="206" template="Templates/CoinItem.tx" x="233.333" y="30760.6"/>
+  <object id="207" template="Templates/CoinItem.tx" x="978.788" y="26803"/>
+  <object id="208" template="Templates/CoinItem.tx" x="163.636" y="24830.3"/>
+  <object id="209" template="Templates/CoinItem.tx" x="63.6364" y="25184.8"/>
+  <object id="210" template="Templates/CoinItem.tx" x="1184.85" y="23936.4"/>
+  <object id="211" template="Templates/CoinItem.tx" x="1124.24" y="23666.7"/>
+  <object id="212" template="Templates/CoinItem.tx" x="1209.09" y="23669.7"/>
+  <object id="213" template="Templates/CoinItem.tx" x="60.6061" y="21342.4"/>
+  <object id="214" template="Templates/CoinItem.tx" x="60.6061" y="21848.5"/>
+  <object id="215" template="Templates/CoinItem.tx" x="184.848" y="21842.4"/>
+  <object id="216" template="Templates/CoinItem.tx" x="1060.61" y="19481.8"/>
+  <object id="217" template="Templates/CoinItem.tx" x="196.97" y="16733.3"/>
+  <object id="218" template="Templates/CoinItem.tx" x="933.333" y="13597"/>
+  <object id="219" template="Templates/CoinItem.tx" x="1054.55" y="13597"/>
+  <object id="220" template="Templates/CoinItem.tx" x="36.3636" y="12157.6"/>
+  <object id="221" template="Templates/CoinItem.tx" x="1215.15" y="12506.1"/>
+  <object id="222" template="Templates/CoinItem.tx" x="187.879" y="11521.2"/>
+  <object id="223" template="Templates/CoinItem.tx" x="1154.55" y="10400"/>
+  <object id="224" template="Templates/CoinItem.tx" x="36.3636" y="8575.76"/>
+  <object id="225" template="Templates/CoinItem.tx" x="1215.15" y="9369.7"/>
+  <object id="226" template="Templates/CoinItem.tx" x="1027.27" y="6651.52"/>
+  <object id="227" template="Templates/CoinItem.tx" x="1124.24" y="4760.61"/>
+  <object id="228" template="Templates/CoinItem.tx" x="66.6667" y="2400"/>
+  <object id="229" template="Templates/CoinItem.tx" x="130.303" y="2400"/>
+  <object id="230" template="Templates/CoinItem.tx" x="130.303" y="1084.85"/>
+  <object id="231" template="Templates/PowerItem.tx" x="1115.15" y="22233.3"/>
+  <object id="232" template="Templates/PowerItem.tx" x="60.6061" y="21560.6"/>
+  <object id="233" template="Templates/PowerItem.tx" x="1212.12" y="19639.4"/>
+  <object id="234" template="Templates/PowerItem.tx" x="224.242" y="18048.5"/>
+  <object id="235" template="Templates/PowerItem.tx" x="1115.15" y="13915.2"/>
+  <object id="236" template="Templates/PowerItem.tx" x="133.333" y="12351.5"/>
+  <object id="237" template="Templates/PowerItem.tx" x="1151.52" y="9627.27"/>
+  <object id="238" template="Templates/PowerItem.tx" x="224.242" y="8751.52"/>
+  <object id="239" template="Templates/PowerItem.tx" x="127.273" y="6490.91"/>
+  <object id="240" template="Templates/PowerItem.tx" x="1090.91" y="5366.67"/>
+  <object id="241" template="Templates/PowerItem.tx" x="1151.52" y="1790.91"/>
+  <object id="242" template="Templates/PowerItem.tx" x="1184.85" y="1430.3"/>
+  <object id="243" template="Templates/PowerItem.tx" x="57.5758" y="24409.1"/>
+  <object id="244" template="Templates/PowerItem.tx" x="1209.09" y="25597"/>
+  <object id="245" template="Templates/PowerItem.tx" x="1096.97" y="24978.8"/>
+  <object id="246" template="Templates/PowerItem.tx" x="151.515" y="27093.9"/>
+  <object id="247" template="Templates/PowerItem.tx" x="1081.82" y="28921.2"/>
+  <object id="248" template="Templates/PowerItem.tx" x="66.6667" y="29269.7"/>
+  <object id="249" template="Templates/PowerItem.tx" x="90.9091" y="30075.8"/>
+  <object id="250" template="Templates/BarrelItem.tx" x="353.333" y="31952"/>
+  <object id="251" template="Templates/WalkingEnemy.tx" x="1182.67" y="31093.3"/>
+  <object id="252" template="Templates/FlyingEnemy.tx" x="63" y="29984">
+   <properties>
+    <property name="walk_speed" type="float" value="0.68"/>
+   </properties>
+  </object>
+  <object id="253" template="Templates/FlyingEnemy.tx" x="1184.85" y="28536.4">
+   <properties>
+    <property name="walk_speed" type="float" value="0.4"/>
+   </properties>
+  </object>
+  <object id="254" template="Templates/FlyingEnemy.tx" x="66.6667" y="26657.6">
+   <properties>
+    <property name="walk_speed" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="255" template="Templates/FlyingEnemy.tx" x="321.212" y="26197">
+   <properties>
+    <property name="walk_speed" type="float" value="0.77"/>
+   </properties>
+  </object>
+  <object id="256" template="Templates/FlyingEnemy.tx" x="930.303" y="25406.1">
+   <properties>
+    <property name="walk_speed" type="float" value="1"/>
+   </properties>
+  </object>
+  <object id="257" template="Templates/FlyingEnemy.tx" x="57.5758" y="24157.6">
+   <properties>
+    <property name="walk_speed" type="float" value="0.3"/>
+   </properties>
+  </object>
+  <object id="258" template="Templates/FlyingEnemy.tx" x="1027.27" y="23866.7">
+   <properties>
+    <property name="walk_speed" type="float" value="0.8"/>
+   </properties>
+  </object>
+  <object id="259" template="Templates/FlyingEnemy.tx" x="778.788" y="23612.1">
+   <properties>
+    <property name="walk_speed" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="260" template="Templates/FlyingEnemy.tx" x="354.545" y="22457.6">
+   <properties>
+    <property name="walk_speed" type="float" value="0.4"/>
+   </properties>
+  </object>
+  <object id="261" template="Templates/FlyingEnemy.tx" x="1000" y="22163.6">
+   <properties>
+    <property name="walk_speed" type="float" value="0.8"/>
+   </properties>
+  </object>
+  <object id="262" template="Templates/FlyingEnemy.tx" x="321.212" y="21278.8">
+   <properties>
+    <property name="walk_speed" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="263" template="Templates/FlyingEnemy.tx" x="933.333" y="19642.4">
+   <properties>
+    <property name="walk_speed" type="float" value="0.7"/>
+   </properties>
+  </object>
+  <object id="264" template="Templates/FlyingEnemy.tx" x="1184.85" y="20415.2">
+   <properties>
+    <property name="walk_speed" type="float" value="0.63"/>
+   </properties>
+  </object>
+  <object id="265" template="Templates/FlyingEnemy.tx" x="130.303" y="17942.4">
+   <properties>
+    <property name="walk_speed" type="float" value="0.8"/>
+   </properties>
+  </object>
+  <object id="266" template="Templates/FlyingEnemy.tx" x="809.091" y="13721.2">
+   <properties>
+    <property name="walk_speed" type="float" value="0.8"/>
+   </properties>
+  </object>
+  <object id="267" template="Templates/FlyingEnemy.tx" x="415.152" y="13830.3"/>
+  <object id="268" template="Templates/FlyingEnemy.tx" x="69.697" y="14042.4">
+   <properties>
+    <property name="walk_speed" type="float" value="0.3"/>
+   </properties>
+  </object>
+  <object id="269" template="Templates/FlyingEnemy.tx" x="275.758" y="11648.5">
+   <properties>
+    <property name="walk_speed" type="float" value="0.7"/>
+   </properties>
+  </object>
+  <object id="270" template="Templates/FlyingEnemy.tx" x="1012.12" y="11387.9"/>
+  <object id="271" template="Templates/FlyingEnemy.tx" x="1066.67" y="10527.3">
+   <properties>
+    <property name="walk_speed" type="float" value="0.3"/>
+   </properties>
+  </object>
+  <object id="272" template="Templates/FlyingEnemy.tx" x="512.121" y="9442.42">
+   <properties>
+    <property name="walk_speed" type="float" value="0.65"/>
+   </properties>
+  </object>
+  <object id="273" template="Templates/FlyingEnemy.tx" x="369.697" y="8712.12">
+   <properties>
+    <property name="walk_speed" type="float" value="0.64"/>
+   </properties>
+  </object>
+  <object id="274" template="Templates/FlyingEnemy.tx" x="184.848" y="8503.03">
+   <properties>
+    <property name="walk_speed" type="float" value="0.4"/>
+   </properties>
+  </object>
+  <object id="275" template="Templates/FlyingEnemy.tx" x="1054.55" y="6854.55">
+   <properties>
+    <property name="walk_speed" type="float" value="0.9"/>
+   </properties>
+  </object>
+  <object id="276" template="Templates/FlyingEnemy.tx" x="239.394" y="6375.76">
+   <properties>
+    <property name="walk_speed" type="float" value="0.7"/>
+   </properties>
+  </object>
+  <object id="277" template="Templates/FlyingEnemy.tx" x="857.576" y="5503.03">
+   <properties>
+    <property name="walk_speed" type="float" value="0.4"/>
+   </properties>
+  </object>
+  <object id="278" template="Templates/FlyingEnemy.tx" x="396.97" y="4639.39">
+   <properties>
+    <property name="walk_speed" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="279" template="Templates/FlyingEnemy.tx" x="215.152" y="3842.42">
+   <properties>
+    <property name="walk_speed" type="float" value="0.35"/>
+   </properties>
+  </object>
+  <object id="280" template="Templates/FlyingEnemy.tx" x="960.606" y="2081.82">
+   <properties>
+    <property name="walk_speed" type="float" value="0.9"/>
+   </properties>
+  </object>
+  <object id="281" template="Templates/FlyingEnemy.tx" x="469.697" y="2487.88">
+   <properties>
+    <property name="walk_speed" type="float" value="0.4"/>
+   </properties>
+  </object>
+  <object id="282" template="Templates/FlyingEnemy.tx" x="357.576" y="1360.61">
+   <properties>
+    <property name="walk_speed" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="283" template="Templates/FlyingEnemy.tx" x="96.9697" y="1187.88">
+   <properties>
+    <property name="walk_speed" type="float" value="0.8"/>
+   </properties>
+  </object>
+  <object id="285" template="Templates/FlyingEnemy.tx" x="1210" y="31932">
+   <properties>
+    <property name="walk_speed" type="float" value="0.68"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="40" height="1000">
+  <data encoding="base64" compression="zlib">
+   eAHt0IEAAAAAw6D5U1/hAIVQYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAgW9gcR4AAQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics" visible="0" locked="1"/>
+</map>

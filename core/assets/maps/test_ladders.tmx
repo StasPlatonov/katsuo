@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="100" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="154">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/ForestBG.tsx"/>
+ <tileset firstgid="1032" source="Tilesets/Objects.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1028" x="0" y="960" width="1280" height="736">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1031" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eAHtk0kKAjEUBaM43t5DOPU9HO/heAufiw/dvfEtpPMXFSjSgY8JVVgKCwMYwAAGMIABDGAAAxjAAAYwgAEMdA2sxt0zp7oG6FHXf/92evSN1D1/e9CkboP27fRo28jxzf8jR4d4BT3CRI6dHjk6xCvoESZy7PTI0SFeQY8wkWOnR44O8Qp6hIkcOz3+22Gtn9uIrdiJvWiEu+jhmvLmDho7ipM4i4u4CnfRwzXlzd00dhcP8RQv8RbuoodrypubjEqZipmYi4VYCnfRwzU1zBw9hvHMLb8NfABZdRod
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="100" height="30">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHtWAsOwiAMJXphL+UNPIufA3gP96JNyNKarqMK22tSQQb1fdhYLIVBBagAFaACVIAKUAEqQAW2q8D9UErPuV3ldWbwYk08EtevxbaG17/Wejk/j6VIAiv6CPrx1qHVZw9+wFNJ8Ri4vNhaadFDnSjn7PuDfizbHfRjmV7e2b3eH8Afxebl3uO8KOczz/MUO1v4IWdxtNWIoVYUm1ZvlLEoZ7k/MnlGsWViyq4d5Uw/cpyJ+IF3K/hxnZ4pJyUx3iIi2Fr87j9rRDiLH8Cd5QfPj++7Ah4gEdKin+UHakf2CtaNHB7Otf7gir0rYflx/jzT6lbWeFsPNm+tUeZ5OIsft0ljZB213vP+fB6+o9Y8LQzWeF13a30PZ+inheivXVsypmHg+WErCD9E+3lrr/Jf0fzAamvcX3m8mT1wtjBY4+Op7EfcA2cLgzXuZzfezB44axhu0zsccm+hafFrDTQMe/UD/220Tuir5WUa11Kbu1c/XsowyaY=
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" template="Templates/StartPoint.tx" x="80.1667" y="913.833"/>
+  <object id="129" name="ladder_01" type="LadderObject" gid="170" x="189.167" y="927.333" width="38" height="154"/>
+  <object id="130" name="ladder_02" type="LadderObject" gid="527" x="256.667" y="926.666" width="97.333" height="61.3333"/>
+  <object id="131" name="ladder_03" type="LadderObject" gid="557" x="573.333" y="893.333" width="10.6667" height="155.333"/>
+  <object id="133" name="ladder_05" type="LadderObject" gid="170" x="253.167" y="801.333" width="38.5" height="154"/>
+  <object id="134" name="ladder_06" type="LadderObject" gid="170" x="285.334" y="671.666" width="38.25" height="159.25"/>
+  <object id="135" name="ladder_07" type="LadderObject" gid="170" x="380.75" y="671.916" width="38.5" height="159.25"/>
+  <object id="136" name="ladder_08" type="LadderObject" gid="170" x="381" y="492.916" width="38" height="140.5"/>
+  <object id="137" name="ladder_09" type="LadderObject" gid="170" x="411.834" y="446.833" width="40.5" height="158.5"/>
+  <object id="138" name="ladder_10" type="LadderObject" gid="170" x="860.834" y="895.333" width="38.5" height="223.167"/>
+  <object id="140" name="ladder_04" type="LadderObject" x="676" y="839.853">
+   <polygon points="81.9999,-64.5198 82.667,-32.5198 21.666,28.5665 22.6667,-1.85312"/>
+  </object>
+  <object id="142" name="ladder_11" type="LadderObject" x="676" y="839.853">
+   <polygon points="103,-62.8531 163,-3.51985 163.666,31.2332 103.333,-29.5198"/>
+  </object>
+  <object id="143" name="ladder_12" type="LadderObject" x="676" y="839.853">
+   <polygon points="105.75,-63.9364 106.042,-29.4782 79.4577,-31.2668 78.625,-64.6864"/>
+  </object>
+  <object id="144" name="ladder_13" type="LadderObject" gid="872" x="412" y="928" width="67.333" height="61.3333"/>
+  <object id="145" name="ladder_14" type="LadderObject" gid="450" x="449.001" y="896.999" width="76.6663" height="61.3333"/>
+  <object id="147" name="ladder_15" type="LadderObject" x="392" y="356" width="47.5" height="88"/>
+  <object id="148" name="ladder_16" type="LadderObject" x="514.917" y="576.917" width="154.167" height="125.167"/>
+  <object id="150" name="ladder_17" type="LadderObject" x="1185.25" y="416.583" width="29.5003" height="511.5"/>
+  <object id="151" name="ladder_17" type="LadderObject" x="1153.75" y="320.5" width="29.5003" height="158.5"/>
+  <object id="152" template="Templates/EOLFlag.tx" x="1200" y="319"/>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="100" height="30" locked="1" opacity="0.5">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" visible="0" locked="1">
+  <object id="69" name="trees" type="ScrollingBackground" gid="1025" x="0" y="960" width="1984" height="736">
+   <properties>
+    <property name="image" value="bg_grass"/>
+    <property name="opacity" type="float" value="0.4"/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="x_scale" type="float" value="2"/>
+    <property name="y_scale" type="float" value="1.5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics" visible="0"/>
+</map>

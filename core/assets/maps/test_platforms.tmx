@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="100" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="173">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/ForestBG.tsx"/>
+ <tileset firstgid="1032" source="Tilesets/Objects.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1028" x="0" y="960" width="1280" height="736">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1031" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="100" height="30" locked="1">
+  <data encoding="base64" compression="zlib">
+   eAHt1+0KwjAMheHi/XjPXqr9MxgHuuMW+mVeQTRLTdonU7AUHggggAACCCCAAAIIIIAAAgggsIvA+7XLTnPs8zyP+v4TfeZQ63fK8zz6daHyrwI6D421jsvreuJ7AuobjV13re/WZ8urTzR2flrfrc+WV59o7Py0vlufLa8+0dj5aX23Plve+UTz6unq6fps8Wif0f12m2fLp15//N/wyqDV7+oz/5xTD417n310v97nidZ3HjXf5Xtx7Nv1P9ZleZ3tMbv/anOe7TG7/27zqF6Pf69an13NYKX9cH+uNI1S7syjdb+762udmN0ggMDqAl9xoEt9
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="100" height="30">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHt17ENgDAQBEFE//VBO0ABzjbwo0FyQnAysxHH4SFAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAo3AfTY7VhoBPRrHakWPSrLZ0aNxrFb0qCSbHT0ax2pFj0qy2ZncY/LdV/Umf9Pku/+xx/X+yxbn67rTWbXa/f0DX3I34Q==
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="169" name="platform_bg_1" gid="557" x="1122.85" y="727.456" width="32" height="276.573" rotation="324.376"/>
+  <object id="170" gid="557" x="1074.61" y="474.259" width="32" height="392.538" rotation="41.2704"/>
+  <object id="126" template="Templates/StartPoint.tx" x="98.6667" y="905.333"/>
+  <object id="138" name="path_01" type="PathObject" x="-230" y="45.3333">
+   <polyline points="438.5,852.333 438.167,628.25"/>
+  </object>
+  <object id="139" name="platform_01" type="MovingPlatformObject" gid="1038" x="163" y="912.667" width="100" height="14">
+   <properties>
+    <property name="path" value="path_01"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.4"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="143" name="path_02" type="PathObject" x="-103" y="-771.286">
+   <polyline points="440,1479.29 440.667,1099.95"/>
+  </object>
+  <object id="144" name="platform_02" type="MovingPlatformObject" gid="1038" x="290" y="720" width="100" height="14">
+   <properties>
+    <property name="path" value="path_02"/>
+    <property name="path_loop" value="forever"/>
+    <property name="path_speed" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="145" name="path_03" type="PathObject" x="288.372" y="-293.334">
+   <polyline points="143.628,662.333 669.295,661"/>
+  </object>
+  <object id="146" name="platform_03" type="MovingPlatformObject" gid="1038" x="387.667" y="376.667" width="100" height="14">
+   <properties>
+    <property name="path" value="path_03"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.4"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="140" name="path_04" type="PathObject" x="-19.4685" y="31">
+   <polyline points="563.802,848 1011.3,848.833"/>
+  </object>
+  <object id="141" name="two_way_count_4" type="MovingPlatformObject" gid="1038" x="496.833" y="887.083" width="100" height="14">
+   <properties>
+    <property name="path" value="path_04"/>
+    <property name="path_loop" value="count"/>
+    <property name="path_loop_count" type="int" value="4"/>
+    <property name="path_speed" type="float" value="0.3"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="149" name="path_05" type="PathObject" x="-61.1638" y="-32.083">
+   <polyline points="509.998,848 1179.83,848.833"/>
+  </object>
+  <object id="150" name="platform_05" type="MovingPlatformObject" gid="1038" x="400.667" y="824" width="100" height="14">
+   <properties>
+    <property name="path" value="path_05"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.45"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="151" name="path_06" type="PathObject" x="-417.633" y="-239.416">
+   <polyline points="563.133,846 546.631,738.833 536.299,648.083 586.966,585.416 646.299,586.083 663.633,820.75"/>
+  </object>
+  <object id="152" name="one_way_forever" type="MovingPlatformObject" gid="1107" x="99.3333" y="625.417" width="96" height="24">
+   <properties>
+    <property name="path" value="path_06"/>
+    <property name="path_loop" value="forever"/>
+    <property name="path_move" value="one_way"/>
+    <property name="path_speed" type="float" value="0.38"/>
+   </properties>
+  </object>
+  <object id="153" name="path_07" type="PathObject" x="-129.05" y="-128.083">
+   <polyline points="579.551,848 1039.55,848.833"/>
+  </object>
+  <object id="154" name="platform_07" type="MovingPlatformObject" gid="1038" x="400.5" y="727" width="100" height="14">
+   <properties>
+    <property name="path" value="path_07"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.25"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="155" name="path_08" type="PathObject" x="-35.3015" y="-193.083">
+   <polyline points="563.802,848 1011.3,848.833"/>
+  </object>
+  <object id="156" name="platform_08" type="MovingPlatformObject" gid="1038" x="481" y="663" width="100" height="14">
+   <properties>
+    <property name="path" value="path_08"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.65"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="157" name="path_09" type="PathObject" x="72" y="-30.5129">
+   <polyline points="391.5,598.512 391.167,455.429"/>
+  </object>
+  <object id="158" name="platform_09" type="MovingPlatformObject" gid="1038" x="420" y="578" width="100" height="14">
+   <properties>
+    <property name="path" value="path_09"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.25"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="161" name="path_10" type="PathObject" x="328.333" y="-62.8417">
+   <polyline points="391.5,481.508 392.167,636.091"/>
+  </object>
+  <object id="162" name="platform_10" type="MovingPlatformObject" gid="1038" x="675" y="424" width="100" height="14">
+   <properties>
+    <property name="path" value="path_10"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.34"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="165" name="path_11" type="PathObject" x="844.245" y="-27.0985">
+   <polyline points="3.915,479.431 3.92167,633.348"/>
+  </object>
+  <object id="166" name="platform_11" type="MovingPlatformObject" gid="1038" x="799.667" y="459" width="100" height="14">
+   <properties>
+    <property name="path" value="path_11"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.3"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="163" name="path_12" type="PathObject" x="839" y="-556.074">
+   <polyline points="391.5,1012.07 392.167,1336.99"/>
+  </object>
+  <object id="164" name="platform_12" type="MovingPlatformObject" gid="1038" x="1182" y="463" width="100" height="14">
+   <properties>
+    <property name="path" value="path_12"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.3"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="167" name="path_13" type="PathObject" x="494.212" y="13.2727">
+   <polyline points="639.333,705 483.333,482.333"/>
+  </object>
+  <object id="168" name="one_way_1" type="MovingPlatformObject" gid="1038" x="1090" y="727" width="100" height="14">
+   <properties>
+    <property name="path" value="path_13"/>
+    <property name="path_loop" value="count"/>
+    <property name="path_loop_count" type="int" value="1"/>
+    <property name="path_move" value="one_way"/>
+    <property name="path_speed" type="float" value="0.6"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="159" name="path_14" type="PathObject" x="201" y="-25.371">
+   <polyline points="391.5,633.37 391.167,481.954"/>
+  </object>
+  <object id="160" name="platform_14" type="MovingPlatformObject" gid="1038" x="549" y="618" width="100" height="14">
+   <properties>
+    <property name="path" value="path_14"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.55"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="147" name="path_15" type="PathObject" x="504.667" y="-250.333">
+   <polyline points="583.333,732 839.333,442.333"/>
+  </object>
+  <object id="148" name="platform_15" type="MovingPlatformObject" gid="1038" x="1043.5" y="489" width="100" height="14">
+   <properties>
+    <property name="path" value="path_15"/>
+    <property name="path_loop" value="no_count"/>
+    <property name="path_speed" type="float" value="0.6"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="171" name="path_16" type="PathObject" x="-340.333" y="-95.667">
+   <polyline points="438.5,852.333 372.167,766.25 374.333,465.667 502.333,312.667 778.333,195.667 1196.33,377.667 1580.33,187 1807,189 1808.33,393.667 1719.67,601.667 1703,858.334 1641.67,939.667 1513.67,960.334 1439.67,993.667"/>
+  </object>
+  <object id="172" name="two_way_spline" type="MovingPlatformObject" gid="1038" x="51.3333" y="773" width="100" height="14">
+   <properties>
+    <property name="path" value="path_16"/>
+    <property name="path_loop" value="forever"/>
+    <property name="path_speed" type="float" value="0.7"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="100" height="30" locked="1" opacity="0.5">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" visible="0" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics" visible="0"/>
+</map>

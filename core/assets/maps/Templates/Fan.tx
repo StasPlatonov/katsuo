@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../Tilesets/Objects.tsx"/>
+ <object name="fan" type="FanObject" gid="74" width="64" height="16">
+  <properties>
+   <property name="distance" type="float" value="200"/>
+  </properties>
+ </object>
+</template>

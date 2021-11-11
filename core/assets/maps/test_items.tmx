@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="40" height="35" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="218">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/ForestBG.tsx"/>
+ <tileset firstgid="1032" source="Tilesets/Objects.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1028" x="0" y="1120.61" width="1280" height="1117.82">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1031" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="40" height="35">
+  <data encoding="base64" compression="zlib">
+   eAHt0sENACAMA7GKfdh/PYa4Dwj3HylyM+MIECBAgAABAgReE9jr7sb6tf/w49cEWtr++DWBlrY/fk1AmsCfAgdjuQLC
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="40" height="35">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHtk0sKgDAMRIve/3p+TuLWZjFYpNiPo4yYQIgVmz5eaggebsANuIF/GliGENRTdTLwps63xhlbqsVX/Kl5A0/JH+aOin1v1RJfL8cU7zKyt4fte4rvDlO6l8UHV1aZkePDXUNlntfaK8fX2iP3PctnCx98oua42O9a+K7OZvk6n8HiO/dlrcGHmVllBMsn+BhMT/T4Ml86o9pntkN1f3P8HywVA2y1syt9h1mk1fZs45G2xrm1VdGdM7kBFQM7t/iNXg==
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" template="Templates/StartPoint.tx" x="98.6667" y="905.333"/>
+  <object id="152" template="Templates/EOLFlag.tx" gid="1080" x="1207.53" y="896.969"/>
+  <object id="153" template="Templates/CoinItem.tx" x="831" y="695"/>
+  <object id="154" template="Templates/CoinItem.tx" x="834" y="617"/>
+  <object id="155" template="Templates/CoinItem.tx" x="830" y="771"/>
+  <object id="156" template="Templates/HealthItem.tx" x="97" y="732.667"/>
+  <object id="157" template="Templates/HealthItem.tx" x="68.6667" y="348"/>
+  <object id="158" template="Templates/HealthItem.tx" name="health" x="228.333" y="444.333"/>
+  <object id="159" template="Templates/PowerItem.tx" x="830.333" y="545.333"/>
+  <object id="160" template="Templates/PowerItem.tx" name="power" x="833" y="835"/>
+  <object id="161" template="Templates/CoinItem.tx" x="130" y="865"/>
+  <object id="162" template="Templates/CoinItem.tx" x="177.667" y="572"/>
+  <object id="163" template="Templates/CoinItem.tx" x="273.334" y="824.999"/>
+  <object id="164" template="Templates/CoinItem.tx" x="313.167" y="825"/>
+  <object id="166" template="Templates/CoinItem.tx" x="326.999" y="633.666"/>
+  <object id="167" template="Templates/CoinItem.tx" x="347" y="823.667"/>
+  <object id="170" template="Templates/CoinItem.tx" x="445.333" y="824.834"/>
+  <object id="172" template="Templates/CoinItem.tx" x="530.667" y="821.667"/>
+  <object id="173" template="Templates/CoinItem.tx" x="581.667" y="817.333"/>
+  <object id="180" template="Templates/BoxItem.tx" x="992" y="927.364"/>
+  <object id="182" template="Templates/BarrelItem.tx" x="827.333" y="476.666"/>
+  <object id="183" template="Templates/BarrelItem.tx" x="548.667" y="542.667"/>
+  <object id="184" template="Templates/BarrelItem.tx" x="674.667" y="604"/>
+  <object id="185" template="Templates/BarrelItem.tx" x="674.667" y="604"/>
+  <object id="186" template="Templates/BarrelItem.tx" x="738.667" y="605.333"/>
+  <object id="187" template="Templates/BarrelItem.tx" name="barrel_test" x="738.833" y="478"/>
+  <object id="188" template="Templates/BarrelItem.tx" x="547.333" y="669.333"/>
+  <object id="190" template="Templates/BarrelItem.tx" x="674.667" y="734.583"/>
+  <object id="193" template="Templates/BarrelItem.tx" x="448.666" y="923.833">
+   <properties>
+    <property name="mass" type="float" value="8"/>
+   </properties>
+  </object>
+  <object id="194" template="Templates/BarrelItem.tx" x="409" y="829.333">
+   <properties>
+    <property name="mass" type="float" value="8"/>
+   </properties>
+  </object>
+  <object id="195" template="Templates/BarrelItem.tx" x="484.333" y="829.833">
+   <properties>
+    <property name="mass" type="float" value="8"/>
+   </properties>
+  </object>
+  <object id="196" name="path_ver" type="PathObject" x="356.849" y="-407.803">
+   <polyline points="458.924,895.189 458.705,1344.34"/>
+  </object>
+  <object id="197" template="Templates/Platform.tx" x="785.598" y="495.917" width="63.25" height="16">
+   <properties>
+    <property name="path" value="path_ver"/>
+    <property name="path_loop_count" type="int" value="1"/>
+    <property name="path_move" value="one_way"/>
+   </properties>
+  </object>
+  <object id="198" template="Templates/ButtonSmall.tx" x="896.356" y="928.095">
+   <properties>
+    <property name="act_on_deactivation" type="bool" value="false"/>
+    <property name="action_delay" type="float" value="0"/>
+    <property name="action_timeout" type="float" value="10"/>
+    <property name="actor" value="platform"/>
+   </properties>
+  </object>
+  <object id="199" template="Templates/GrenadeItem.tx" x="605" y="670">
+   <properties>
+    <property name="item_value" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="200" template="Templates/BombItem.tx" x="223" y="572">
+   <properties>
+    <property name="item_value" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="202" template="Templates/BoxItem.tx" x="1087" y="929">
+   <properties>
+    <property name="autoclose" type="bool" value="true"/>
+    <property name="close_sound" value="box_open"/>
+   </properties>
+  </object>
+  <object id="203" template="Templates/GrenadeItem.tx" x="383" y="928">
+   <properties>
+    <property name="item_value" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="204" template="Templates/BombItem.tx" x="736" y="733.25"/>
+  <object id="205" template="Templates/BarrelItem.tx" x="205.833" y="926.333">
+   <properties>
+    <property name="mass" type="float" value="8"/>
+   </properties>
+  </object>
+  <object id="206" template="Templates/SmokeGrenadeItem.tx" x="607.712" y="543.742"/>
+  <object id="207" template="Templates/BeamItem.tx" x="684.708" y="480"/>
+  <object id="208" template="Templates/SmokeGrenadeItem.tx" x="61.3333" y="738.667"/>
+  <object id="209" template="Templates/SmokeGrenadeItem.tx" x="317.333" y="449.333"/>
+  <object id="210" template="Templates/GrenadeItem.tx" x="130.667" y="574.667">
+   <properties>
+    <property name="item_value" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="211" template="Templates/GrenadeItem.tx" x="385.333" y="641.333">
+   <properties>
+    <property name="item_value" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="212" template="Templates/BeamItem.tx" x="34.6667" y="350.667"/>
+  <object id="215" template="Templates/GrenadeItem.tx" x="238.667" y="830">
+   <properties>
+    <property name="item_value" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="216" template="Templates/GrenadeItem.tx" x="703.583" y="606.5">
+   <properties>
+    <property name="item_value" type="int" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="40" height="35">
+  <data encoding="base64" compression="zlib">
+   eAHt0DENADAMBLFX+MNtOzcgks0nHQEnIkCAAAECBAgQIECAAAECBAgQILAncCq5/etFgMCswAfPpQLm
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" visible="0" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics" visible="0"/>
+</map>

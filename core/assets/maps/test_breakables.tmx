@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="100" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="229">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/ForestBG.tsx"/>
+ <tileset firstgid="1032" source="Tilesets/Objects.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1028" x="0" y="960" width="1280" height="736">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1031" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="100" height="30">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHtlmsOwyAMg9Huf7497rIfmzVFsqJAWcn6YEaKKBBc8rntVoqaCIiACIiACIiACIiACIiACIiACIiACIiACIiACIjAGQlcL6UcOc7IdOTM8OL+jpGG/RYjOrwXejjbv7Wsmkc9jbhnnS3SPupcVs3yI8dh+ZHDMUtFfmSRzNH5hR+3pN/hrLPlkNpGZY+ae/3a42zbUK/fBTVHUd8Rr+D3vIczcr6J+G7zzkbPoPent3pwjvTglQVyev+LIfffWsSP554VIJ6rvR+Yb3FsrfGtlnQ4d6ZrZm918VzkB1j5Z5zH2G9hmmv6Xu/WaB91D7O3Mz7oO+H9iLywfb6HR5G+z6uN5ceHDPvBrEb42PvTq4G83lw+49mvuWa+9nW11pBrvP0+jO3bBY2Wjl/z40h7tjljFfX4VllE6zwHP6IwD9b2s/FequcFpM+eQQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" template="Templates/StartPoint.tx" x="66" y="902"/>
+  <object id="145" template="Templates/ButtonSmall.tx" x="903.5" y="704.167">
+   <properties>
+    <property name="actor" value="breakable_wall"/>
+   </properties>
+  </object>
+  <object id="151" type="BreakableObject" gid="730" x="480" y="768" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+   </properties>
+  </object>
+  <object id="152" name="breakable_wall" type="BreakableObject" gid="692" x="896.091" y="863.833" width="32" height="63.6667">
+   <properties>
+    <property name="health" type="float" value="100"/>
+    <property name="player_interaction" type="bool" value="false"/>
+    <property name="weapon_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="153" type="BreakableObject" gid="495" x="958.667" y="927.5" width="48" height="47">
+   <properties>
+    <property name="health" type="float" value="100"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="155" type="BreakableObject" gid="686" x="802.667" y="883.5" width="73.3333" height="47.6667">
+   <properties>
+    <property name="health" type="float" value="50"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="156" type="BreakableObject" gid="1038" x="684.364" y="626.852" width="178.667" height="16" rotation="39.3695">
+   <properties>
+    <property name="health" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="false"/>
+    <property name="sprite" value="platform"/>
+   </properties>
+  </object>
+  <object id="157" type="BreakableObject" gid="495" x="1114.58" y="894.833" width="100" height="97">
+   <properties>
+    <property name="health" type="float" value="60"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="158" type="BreakableObject" gid="692" x="576.152" y="896.008" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="159" type="BreakableObject" gid="692" x="576" y="863.983" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="160" type="BreakableObject" gid="377" x="256.13" y="928.022" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="161" type="BreakableObject" gid="379" x="256.182" y="895.955" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="162" type="BreakableObject" gid="692" x="384.545" y="927.333" width="31.4545" height="62.9091">
+   <properties>
+    <property name="health" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="163" template="Templates/CoinItem.tx" x="352.667" y="928"/>
+  <object id="164" template="Templates/CoinItem.tx" x="675.167" y="766.667"/>
+  <object id="165" template="Templates/CoinItem.tx" x="1154" y="928"/>
+  <object id="166" type="BreakableObject" gid="495" x="129.106" y="927.777" width="30.625" height="31.375">
+   <properties>
+    <property name="health" type="float" value="50"/>
+    <property name="player_break_timeout" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="true"/>
+    <property name="weapon_interaction" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="167" template="Templates/CoinItem.tx" x="1067.67" y="702.5"/>
+  <object id="173" template="Templates/CoinItem.tx" x="1183.5" y="927.25"/>
+  <object id="174" template="Templates/CoinItem.tx" x="1215" y="927.5"/>
+  <object id="175" type="BreakableObject" gid="692" x="544" y="768" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+   </properties>
+  </object>
+  <object id="177" type="BreakableObject" gid="692" x="512" y="768" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+   </properties>
+  </object>
+  <object id="178" type="BreakableObject" gid="692" x="576" y="768" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="1"/>
+   </properties>
+  </object>
+  <object id="179" template="Templates/CoinItem.tx" x="1105" y="702.5"/>
+  <object id="188" type="BreakableObject" gid="495" x="575.688" y="704.313" width="32" height="32">
+   <properties>
+    <property name="health" type="float" value="50"/>
+    <property name="player_break_timeout" type="float" value="1"/>
+    <property name="player_interaction" type="bool" value="true"/>
+    <property name="weapon_interaction" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="195" template="Templates/CrateBig.tx" x="192.667" y="732.833"/>
+  <object id="209" template="Templates/CrateBig.tx" x="222.833" y="634.833" width="47.5" height="47"/>
+  <object id="210" template="Templates/CrateSmall.tx" name="CrateSmall" x="232.75" y="584.5"/>
+  <object id="211" template="Templates/CrateBig.tx" x="1007.25" y="606.666" width="52.5" height="48"/>
+  <object id="214" template="Templates/CrateBig.tx" x="1154.25" y="606.667" width="50.5" height="47.5"/>
+  <object id="221" template="Templates/CrateBig.tx" x="468" y="730"/>
+  <object id="223" template="Templates/CrateSmall.tx" x="1009.67" y="557.333"/>
+  <object id="225" template="Templates/CrateSmall.tx" x="1207" y="605"/>
+  <object id="226" template="Templates/CrateBig.tx" x="962" y="702.667"/>
+  <object id="227" template="Templates/CrateBig.tx" x="1146" y="702.667"/>
+  <object id="228" template="Templates/EOLFlag.tx" x="1208.67" y="862.667"/>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="100" height="30" opacity="0.5">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" visible="0" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics"/>
+</map>

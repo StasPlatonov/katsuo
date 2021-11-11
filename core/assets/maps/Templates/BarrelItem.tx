@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../Tilesets/Objects.tsx"/>
+ <object name="barrel" type="MovableObject" gid="30" width="27" height="26">
+  <properties>
+   <property name="is_dynamic" type="bool" value="true"/>
+   <property name="item_type" value="barrel"/>
+   <property name="item_value" type="int" value="1"/>
+   <property name="material" value="wood"/>
+  </properties>
+ </object>
+</template>

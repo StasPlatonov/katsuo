@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="100" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="175">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/ForestBG.tsx"/>
+ <tileset firstgid="1032" source="Tilesets/Objects.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1028" x="0" y="960" width="1280" height="736">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1031" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="100" height="30">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHtlVEOwyAMQ9Huf75tx9n4iJQPGyQg1KBUqkBOncWPdSslrySQBJJAEkgCSSAJJIEkcC+B76sU5fte8jhZPQvVS3m2KGbKmZVny/OIIqDVV/k7qDxb1CkqZ1aeTf08ZtgxL9OjWCj0XZV5pg/zMl2BW9QMqzLP9GFepkexUOi7KvNMH+ZlugK3qBlWZZ7pw7xMj2Kh0Ldm/oC7NRvihDTfo1VnNab7vrftUWak+dyojrSex9fRvtcTeU7XUGak1Zz2HqE60jybXt0/a/sRj3lPXVHmqhl7lIt50LOmIY/V2DriYb1O0VFmpPk8vbp/1va7PPZ5p66IE9J8vl7d3i2/9jy+v+1HPOY9dUWZkVbzGV9WbzHY5WnNcEINcTLudX3yQrM9Oc+Oz1bOrDxb1NkoZ376/Yxi3uqrmtl+M1uz31h7//8jom9jO7LeyLyV6QclsJZj
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" template="Templates/StartPoint.tx" x="98.6667" y="905.333"/>
+  <object id="150" template="Templates/EOLFlag.tx" x="1207.33" y="896.667"/>
+  <object id="154" template="Templates/BarrelItem.tx" x="797.333" y="726.667"/>
+  <object id="155" template="Templates/BarrelItem.tx" x="357.333" y="764"/>
+  <object id="156" template="Templates/BarrelItem.tx" x="224" y="792"/>
+  <object id="157" template="Templates/BarrelItem.tx" x="152" y="564"/>
+  <object id="158" template="Templates/BarrelItem.tx" x="81.3333" y="568"/>
+  <object id="159" template="Templates/ButtonSmall.tx" x="207.896" y="928.021">
+   <properties>
+    <property name="action_sound" value="switch"/>
+    <property name="action_timeout" type="float" value="1"/>
+    <property name="actor" value="light_03"/>
+    <property name="one_way_action" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="160" template="Templates/ButtonSmall.tx" x="704.25" y="735.875">
+   <properties>
+    <property name="actor" value="light_01"/>
+   </properties>
+  </object>
+  <object id="163" template="Templates/ButtonSmall.tx" x="496" y="928.273">
+   <properties>
+    <property name="action_sound" value="switch"/>
+    <property name="action_timeout" type="float" value="1"/>
+    <property name="actor" value="light_02"/>
+    <property name="one_way_action" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="165" template="Templates/BarrelItem.tx" x="418" y="571"/>
+  <object id="166" template="Templates/BarrelItem.tx" x="579" y="415"/>
+  <object id="167" template="Templates/BarrelItem.tx" x="579.833" y="388.167"/>
+  <object id="169" name="chain_01" type="RopeObject" x="993.333" y="585.333">
+   <properties>
+    <property name="clr" type="color" value="#ff000000"/>
+    <property name="sprite" value="whitetexture"/>
+    <property name="thickness" type="float" value="10"/>
+   </properties>
+   <polyline points="0,0 0,40 0,80 0,120 0,160 0.550725,205.42 0.566288,265.313 0,280"/>
+  </object>
+  <object id="171" name="MovingLight" type="LightObject" gid="1036" x="979.75" y="868.875" width="27.75" height="7.375">
+   <properties>
+    <property name="attached" value="chain_01"/>
+    <property name="color" type="color" value="#ffff7c7c"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="light_type" value="cone"/>
+    <property name="strength" type="int" value="200"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="100" height="30" opacity="0.5">
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T20MH4hAYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/gMDLuAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="7" name="lightground">
+  <object id="151" name="light_07" type="LightObject" gid="1060" x="1114" y="732" width="128" height="128">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="pulse_amp" type="float" value="0.5"/>
+    <property name="pulse_min" type="float" value="0.5"/>
+    <property name="pulse_speed" type="float" value="90"/>
+    <property name="softness" type="float" value="0.5"/>
+    <property name="strength" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="173" name="light_05" type="LightObject" gid="1060" x="1108" y="404" width="128" height="128">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="pulse_amp" type="float" value="0.5"/>
+    <property name="pulse_min" type="float" value="0.5"/>
+    <property name="pulse_speed" type="float" value="360"/>
+    <property name="softness" type="float" value="0.5"/>
+    <property name="strength" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="174" name="light_06" type="LightObject" gid="1060" x="1108" y="564" width="128" height="128">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="pulse_amp" type="float" value="0.5"/>
+    <property name="pulse_min" type="float" value="0.5"/>
+    <property name="pulse_speed" type="float" value="180"/>
+    <property name="softness" type="float" value="0.5"/>
+    <property name="strength" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="170" name="light_04" type="LightObject" x="838" y="461" width="16" height="16">
+   <properties>
+    <property name="attached" value=""/>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="direction" type="float" value="-90"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="light_type" value="point"/>
+    <property name="pulse_speed" type="float" value="0"/>
+    <property name="softness" type="float" value="0.5"/>
+    <property name="sprite" value=""/>
+    <property name="strength" type="int" value="150"/>
+   </properties>
+  </object>
+  <object id="168" name="light_03" type="LightObject" x="294.667" y="588.667" width="16" height="16">
+   <properties>
+    <property name="attached" value=""/>
+    <property name="color" type="color" value="#fffaff94"/>
+    <property name="direction" type="float" value="-90"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="light_type" value="cone"/>
+    <property name="pulse_amp" type="float" value="0.15"/>
+    <property name="pulse_min" type="float" value="0.85"/>
+    <property name="pulse_speed" type="float" value="360"/>
+    <property name="softness" type="float" value="0.5"/>
+    <property name="sprite" value="whitetexture"/>
+    <property name="strength" type="int" value="150"/>
+   </properties>
+  </object>
+  <object id="161" name="light_02" type="LightObject" x="194.667" y="361.333" width="16" height="16">
+   <properties>
+    <property name="attached" value=""/>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="direction" type="float" value="-90"/>
+    <property name="light_type" value="point"/>
+    <property name="pulse_amp" type="float" value="0.3"/>
+    <property name="pulse_min" type="float" value="0.7"/>
+    <property name="pulse_speed" type="float" value="180"/>
+    <property name="softness" type="float" value="0.5"/>
+    <property name="sprite" value="whitetexture"/>
+    <property name="strength" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="153" name="light_01" type="LightObject" x="641" y="617.667" width="16" height="16">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="direction" type="float" value="-90"/>
+    <property name="enabled" type="bool" value="true"/>
+    <property name="light_type" value="cone"/>
+    <property name="softness" type="float" value="0.5"/>
+    <property name="sprite" value="whitetexture"/>
+    <property name="strength" type="int" value="100"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="foreground" visible="0" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics"/>
+</map>

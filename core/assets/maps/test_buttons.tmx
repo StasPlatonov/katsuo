@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="100" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="164">
+ <tileset firstgid="1" source="Tilesets/Misc.tsx"/>
+ <tileset firstgid="1025" source="Tilesets/Objects.tsx"/>
+ <tileset firstgid="1097" source="Tilesets/ForestBG.tsx"/>
+ <objectgroup id="1" name="background" locked="1">
+  <object id="65" name="bg_wall" type="ScrollingBackground" gid="1100" x="0" y="960" width="1280" height="736">
+   <properties>
+    <property name="image" value=""/>
+    <property name="x_scale" type="float" value="0"/>
+    <property name="y_scale" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="bg_clouds" type="ScrollingBackground" gid="1103" x="0" y="660" width="1280" height="256">
+   <properties>
+    <property name="image" value=""/>
+    <property name="repeat_horizontal" type="bool" value="true"/>
+    <property name="speed_horizontal" type="float" value="-7"/>
+    <property name="x_scale" type="float" value="0.4"/>
+    <property name="y_scale" type="float" value="0.1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="playground_back" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eAHt0cEJACEQBMEFo/DyD1Q/E4Gf4ShB9jtUz3gECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIDAi8C3Zvb9XoeAHh0dskKPSHRcPTo6ZIUekei4enR0yAo9ItFx9ejokBV6RML9q8ABfOwCAg==
+  </data>
+ </layer>
+ <layer id="3" name="playground_main" width="100" height="30">
+  <properties>
+   <property name="is_ground" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eAHtmGsKwjAQBoPewaN4/1P4uIf0t1kksIhpGtItY/sFQrU26+5MYmpTUhMBERABERABERABERCB/RK4n1Ii9/2S/12ZuaA2cm5RzMg1k3OTjygCrLjkOUjOLcoiuWZybvIRRYAVlzwHyblFWSTXTM5NPqIIsOKS5yA5tyiL5JrJuclHFAFW3Ft+fuX7I79f0v3cnb7GjFT4zLF8H4n1j2PNxVwzN612OX+eEbeu6/3cvBytyQfL+BIfrTWi9bGe06U+5pzIx3Y+pvwbXvb32rfKR41M//nW+jDW5uM1s7fKRz/32oiWj9o4fz7Ch91PH/H+yv+P8Ix7Xl8D7nctrzVy66mDcK2tjzV62WP8sTAdORIYbZnDG/BZjU8=
+  </data>
+ </layer>
+ <objectgroup id="2" name="playground">
+  <object id="126" template="Templates/StartPoint.tx" x="98.6667" y="905.333"/>
+  <object id="144" name="door_01" type="SlidingDoorObject" gid="1029" x="290.5" y="925.5" width="16" height="60.3333">
+   <properties>
+    <property name="dx" type="float" value="0"/>
+    <property name="dy" type="float" value="0"/>
+    <property name="is_actor" type="bool" value="true"/>
+    <property name="move_sound" value="door_move"/>
+    <property name="openclose_sound" value="door_openclose"/>
+    <property name="opened" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="150" name="path_ver" type="PathObject" x="53.3333" y="71.1536">
+   <polyline points="459.833,576.664 459.5,842.596"/>
+  </object>
+  <object id="151" name="platform_ver" type="MovingPlatformObject" gid="1031" x="480.848" y="654.909" width="62.697" height="14">
+   <properties>
+    <property name="interactive" type="bool" value="true"/>
+    <property name="move_sound" value="elevator"/>
+    <property name="path" value="path_ver"/>
+    <property name="path_loop" value="count"/>
+    <property name="path_loop_count" type="int" value="1"/>
+    <property name="path_move" value="one_way"/>
+    <property name="path_speed" type="float" value="0.6"/>
+    <property name="stop_sound" value="elevator_stop"/>
+   </properties>
+  </object>
+  <object id="153" name="path_hor" type="PathObject" x="249.407" y="58.2189">
+   <polyline points="457.243,589.28 869.244,588.364"/>
+  </object>
+  <object id="154" name="platform_hor" type="MovingPlatformObject" gid="1031" x="673.985" y="655.667" width="62.697" height="14">
+   <properties>
+    <property name="interactive" type="bool" value="true"/>
+    <property name="move_sound" value="elevator"/>
+    <property name="path" value="path_hor"/>
+    <property name="path_loop" value="count"/>
+    <property name="path_loop_count" type="int" value="1"/>
+    <property name="path_move" value="one_way"/>
+    <property name="path_speed" type="float" value="0.6"/>
+    <property name="sprite" value="platform"/>
+    <property name="stop_sound" value="elevator_stop"/>
+   </properties>
+  </object>
+  <object id="159" template="Templates/ButtonSmall.tx" x="239.5" y="928">
+   <properties>
+    <property name="actor" value="door_01"/>
+   </properties>
+  </object>
+  <object id="160" template="Templates/ButtonSmall.tx" x="448.091" y="928.682">
+   <properties>
+    <property name="action_delay" type="float" value="1"/>
+    <property name="actor" value="platform_ver"/>
+   </properties>
+  </object>
+  <object id="161" template="Templates/ButtonSmall.tx" x="448.364" y="640.182">
+   <properties>
+    <property name="action_delay" type="float" value="1"/>
+    <property name="actor" value="platform_ver"/>
+    <property name="one_way_action" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="162" template="Templates/ButtonSmall.tx" x="652.75" y="639.875">
+   <properties>
+    <property name="actor" value="platform_hor"/>
+   </properties>
+  </object>
+  <object id="163" template="Templates/EOLFlag.tx" x="1200.67" y="638.667"/>
+ </objectgroup>
+ <layer id="11" name="playground_front" width="100" height="30">
+  <data encoding="base64" compression="zlib">
+   eAHt0bEJAAAIA0Fx/wEdxx2EFMLZ+8WlyhEgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIBASmA6Vda9CNjjopb7sUfOVpkAAQJfBRbJXwKP
+  </data>
+ </layer>
+ <objectgroup id="4" name="foreground" visible="0" locked="1"/>
+ <objectgroup id="6" name="preload" visible="0" locked="1">
+  <object id="1" name="ScreenSize" type="Viewport" x="0" y="240" width="1280" height="720"/>
+ </objectgroup>
+ <objectgroup id="7" name="physics"/>
+</map>
