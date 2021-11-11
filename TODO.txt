@@ -1,70 +1,14 @@
 Tech
-+ AdMob
-+- Joints (wires, chains, ropes)
 +- Separate gameplay from engine
-+ Level complete screen
-+ Game complete screen
-+ Level select screen
-+ Settings screen
-+ Highscores screen
-+ Main menu screen
-+ Logo screen
-+ Pause UI
 + Particles on playground layer
 + Physical particles
 + One-way platform
-+ Moving one-way platform
-+ Sliding doors
 + Static/dynamic lights
 +- Background fans, drops
-+- Beams
-+- Shooting guns (destructable)
-- Falling and floor blades
 +-- Enemies
-+- Cinematographic deaths (falls, exploding parts, etc...)
-- Decals
-+ Physical ground shapes
 + Postprocessing
-- Recursive properties inheritance for classes in GP
 + Updater
-+- Score system
 + On screen controls
-+ Long time operations with progress screen
-+ Progress screen animation
-+ Servers list
-- Dynamic interactive/non-interactive objects (lights, birds, blinks, grass, etc) to make world "alive"
 + Objects in background layers (parallax)
-+ Weather support
 + Breakable objects
-+ Tutorial
-- More particles to be everywhere
-- More responsiveness everywhere
-+ jump higher if pressed longer
-+ when start falling, let jump for some timeout
-- collision zones different sizes for enemies and usefull things
-+ smooth fade in/out screens and screens transition
-- start new game with progress reset (new skill, more rewards)
-+ map & resources problem (map tilesets, common tilesets)
-- mini-story between levels?
 + box2d/software lighting
-
-BUGS
-- Animation is always 'fall' on ropes
-- Grenades sticks in walls if drop them while standing right near wall
-- Character turns to left when jumping even it stands looking right
-
-IMPORTANT
-- the setting
-- the story
-- the art
-- the sounds/music
-- the global aim(game) and small aims(levels)
-- what to teach player in every level
-- increase difficulty/reward through levels. level boss?
-- what to store in preferences (on device)?
-- screens sequences (graph)
-- achievements system (collectables, events, level score)
-+ when to show ads (level loading, level complete, player dies)  
-+ freemium version. Paid version has no Ads.
-+- social networks or sharing?
-
